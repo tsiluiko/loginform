@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="loginForm" class="login-form">
+            <h1>Login Form</h1>
+
+            <div class="input-group">
+                <label for="firstName">Ім'я</label>
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Введіть ім'я"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">Прізвище</label>
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Введіть прізвище"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="email">Електронна пошта</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Введіть пошту"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Пароль</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Введіть пароль"
+                    required
+                >
+            </div>
+
+            <div class="show-password">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Показати пароль</label>
+            </div>
+
+            <button type="submit">Увійти</button>
+
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
